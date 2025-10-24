@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Warm Wishes — Aryan & Mrudav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>Warm Wishes for <span class="highlight">Aryan Panicker</span> & <span class="highlight">Mrudav</span></h1>
+      <p class="tagline">Hoping you both feel the warmest welcome and the best of everything.</p>
+    </div>
+  </header>
+
+  <main class="container" id="main" role="main">
+    <section class="cards" aria-label="Greetings">
+      <article class="card" id="aryan" tabindex="0" aria-labelledby="aryan-name">
+        <div class="avatar" aria-hidden="true">A</div>
+        <h2 id="aryan-name">Aryan Panicker</h2>
+        <p class="message">Wishing you warmth, joy, and a friendly welcome wherever you go. You are appreciated and celebrated.</p>
+        <button class="btn" data-name="Aryan">Send a virtual hug</button>
+      </article>
+
+      <article class="card" id="mrudav" tabindex="0" aria-labelledby="mrudav-name">
+        <div class="avatar" aria-hidden="true">M</div>
+        <h2 id="mrudav-name">Mrudav</h2>
+        <p class="message">May you be surrounded by kindness, comfort, and smiles. The world is better with you in it.</p>
+        <button class="btn" data-name="Mrudav">Send a virtual hug</button>
+      </article>
+    </section>
+
+    <section class="notes" aria-label="Notes">
+      <h3>Leave a short note</h3>
+      <form id="noteForm" aria-label="Leave a note">
+        <label for="name">Your name</label>
+        <input id="name" name="name" placeholder="e.g. Sam" required />
+        <label for="note">Message (max 200 chars)</label>
+        <textarea id="note" name="note" maxlength="200" placeholder="Write a short warm message..." required></textarea>
+        <div class="form-row">
+          <button type="submit" class="btn primary">Share message</button>
+          <button type="button" id="clear" class="btn">Clear</button>
+        </div>
+      </form>
+
+      <div id="guestbook" class="guestbook" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>Made with warmth ❤️ — <small>Feel free to customize this page.</small></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
